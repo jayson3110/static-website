@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cred App like Tap Bar Interaction</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        nav {
+            position: relative;
+            display: block;
+            background-color: #f6f9ff;
+            padding: 10px;
+            border-radius: 40px;
+            transform: scale(1.8);
+            overflow: hidden;
+        }
+        nav a {
+            position: relative;
+            text-decoration: none;
+            color: #53588b;
+            font-family: Verdana,  Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+            line-height: 1;
+            text-align: center;
+            display: inline-block;
+            width: 100px;
+            padding: 10px;
+            box-sizing: border-box;
+            z-index: 2;
+        }
+        nav a i {
+            position: relative;
+            left: 25%;
+            transition: 0.3 ease left;
+        }
+        nav a b {
+            position: relative;
+            top: 40px;
+            transition: 0.3s ease top;
+        }
+        nav a:hover b {
+            top: 0;
+        }
+        nav a:hover i {
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">
+            <i class="fas fa-home"></i>
+            <b>home</b>
+        </a>
+        <a href="#">
+            <i class="far fa-credit-card"></i>
+            <b>cards</b>
+        </a>
+        <a href="#">
+            <i class="fas fa-award"></i>
+            <b>lifestyle</b>
+        </a>
+    </nav>
+
+</body>
+</html>

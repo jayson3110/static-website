@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This is an example of a meta description. This will often show up in search results.">
+	<meta  name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet"  href="stylee.css">
+	<script src="game/js/gameproject.js"></script>
+	<script src="game/js/enemy.js"></script>
+	<script src="game/js/player.js"></script>
+</head>
+<body>
+	<div class="header">
+		<p>Play the greates RPG ever to be made</p>
+		<h2>Choose your Character</h2>
+	</div>
+
+	<div class="interface">
+		<a href="#" onclick="GameManager.setGameStart('Warrior')">
+			<img src="game/warrior/warrior.png" alt = "warrior">
+			<div>
+				<h3>Warrior</h3>
+				<p>Warriors have higher health and stamina, however their strength also makes them slower and clumsier</p>
+			</div>
+		</a> 
+		<a href="#" onclick="GameManager.setGameStart('Warwick')">
+			<img src="game/warrior/warwick.png" alt="Warwick">
+			<div>
+				<h3>Warwick</h3>
+				<p>Warwick are fast and have high stamina and speed which makes up for their lack in strength and health</p>
+			</div>
+		</a>
+		<a href="#" onclick="GameManager.setGameStart('Karma')">
+			<img src="game/warrior/karma.png" alt="Karma">
+			<div>
+				<h3>Karma</h3>
+				<p>
+					Karma are glass canons which puts all their effort into spells. This means they slack on everything else.
+				</p>
+			</div>
+		</a>
+		<a href="#" onclick="GameManager.setGameStart('Vayne')">
+			<img src="game/warrior/vayne.png" alt="Vayne">
+			<div>
+				<h3>Vayne</h3>
+				<p>Vayne are well rounded fighters that focus on evening out their skills. No strengths or weaknesses</p>
+			</div>
+		</a>
+		
+	</div>
+
+	<div class="actions">
+		
+	</div>
+
+	<div class="arena">
+		
+	</div>
+	
+	<div class="enemy">
+		
+	</div>
+
+</body>
+</html>

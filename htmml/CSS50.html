@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Build a Technical Documentation page</title>
+	<style>
+		html, html a {
+			-webkit-font-smoothing: antialiased !important;
+		}
+		body {
+			font-family: "Varela Round", sans-serif;
+			color: #EEEEEE;
+			background-color: #78909C;
+		}
+		nav.large_menu {
+			font-size: 12px;
+			background-color: #78909C;
+			height: 100vh;
+			position: fixed;
+			top: 0;
+			left: 0;
+			min-height: 400px;
+			width: 250px;
+		}
+		nav.large_menu ul {
+			list-style-type: none;
+		}
+		nav.large_menu li {
+			padding-top: 10px;
+			font-size: 20px;
+			text-shadow: 0 1px 3px rgba(0,0,0,0.12);
+		}
+		nav.large_menu a:hover {
+			color: #FFAB40;
+		}
+		.nav-link {
+			color: #EEEEEE;
+		}
+		.list_title {
+			font-size: 28px;
+			text-shadow: 0 1px 3px rgba(0,0,0,0.12);
+		}
+		a {
+			color: #FFAB40;
+			text-decoration: none;
+		}
+		main {
+			position: relative;
+			margin: 260px;
+			top: ;
+		}
+		section {
+			display: flex;
+			flex-direction: column;
+			padding-left: 5%;
+			padding-right: 5%;
+
+		}
+		header {
+			font-family: 'Montserrat' , sans-serif;
+			font-size: 24px;
+		}
+		.author {
+			display: block;
+			padding-left: 15px;
+			font-size: 12px;
+		}
+		h1 {
+			text-shadow: 0 1px 3px rgba(0,0,0,0.24) ;
+		}
+		h2{
+			display: inline;
+			text-shadow: 0 1px 3px rgba(0,0,0,0.12) ;
+		}
+		pre {
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+		code {
+			border-radius: 5px;
+			font-family: monospace;
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12)
+		}
+		article {
+			display: flex;
+			flex-direction: column;
+		}
+		li {
+			font-family: "Varela Round", sans-serif;
+
+		}
+	</style>
+</head>
+<body>
+	<nav class="large_menu" id="navbar">
+		<header>
+			<span class="list_title">List of CSS Tricks</span>
+			<ul>
+				<li><a href="#Introduction" class="nav-link">Introduction</a></li>
+				<li><a href="#Better_Helvetica" class="nav-link">Better Helvetica</a></li>
+				<li><a href="#Blurry_Text" class="nav-link">Blurry Text</a></li>
+				<li><a href="#CSS_Box_Shadow" class="nav-link">CSS Box Shadow</a></li>
+				<li><a href="#CSS_Text_Shadow" class="nav-link">CSS Text Shadow</a></li>
+				<li><a href="#CSS_Triangle" class="nav-link">CSS Triangle</a></li>
+				<li><a href="#Drop_Caps" class="nav-link">Drop Caps</a></li>
+				<li><a href="#Fancy_Ampersand" class="nav-link">Fancy Ampersand</a></li>
+				<li><a href="#Fluid_Typography" class="nav-link">Fluid Typography</a></li>
+				<li><a href="#Monotone_an_Image_with_CSS" class="nav-link">Monotone an Image with CSS</a></li>
+				<li><a href="#Tucked_Corners" class="nav-link">Tucked Corner</a></li>
+				<li><a href="Typerwriter_Effect" class="nav-link">Typewriter Effect</a></li>
+			</ul>
+		</header>
+	</nav>
+	<main id="main-doc">
+		<section class="main-section" id="Introduction">
+			<header><h1>Introduction</h1></header>
+			<article>
+				<p>Below is a short list of items that are nice tips taken from <a href="https://css-tricks.com/" target="_blank">CSS-Tricks.com</a>.</p>
+			</article>
+		</section>
+		<section class="main-section" id="Better_Helvetica">
+			<header><h2>Better Helvetica</h2></header><span class="author">Written by<a href="https://css-tricks.com/author/chriscoyier"> Chris Coyier</a></span>
+			<article>
+				<p>Just a simple bit of code that defaults to the best available Helvetica.</p>
+				<pre><code class="css"> body {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 300;
+      }</code></p>
+			</article>
+		</section>
+		<section class="main-section" id="CSS_Box_Shadow">
+			<header><h2>CSS Box Shadow</h2></header>
+			<span class="author">Written by<a href="https://css-tricks.com/author/chriscoyier/"> Chris Coyier </a></span>
+			<article>
+				<p>Used in casting shadows off block-level elements (like divs).</p>
+				<h4>Outer Shadow</h4>
+				<pre><code class="css">      .shadow {
+        -moz-box-shadow:    3px 3px 5px 6px #ccc;
+        -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+        box-shadow:         3px 3px 5px 6px #ccc;
+      }</code></pre>
+            <ol>
+            	<li>The horizontal offset of the shadow, positive means the shadow will be on the right of the box, a negative offset will put the shadow on the left of the box.</li>
+            	<li>The vertical offset of the shadow, a negative one means the box-shadow will be above the box, a positive one means the shadow will be below the box.</li>
+            	<li>The blur radius (optional), if set to 0 the shadow will be sharp, the higher the number, the more blurred it will be.</li>
+            	<li>The spread radius (optional), positive values increase the size of the shadow, negative values decrease the size. Default is 0 (the shadow is same size as blur).</li>
+            	<li>Color</li>
+
+            </ol>
+			</article>
+		</section>
+
+	</main>
+
+</body>
+</html>

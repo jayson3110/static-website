@@ -1,0 +1,354 @@
+<!doctype html>
+<html>
+<head>
+	<title>freeCodeCamp Product landing Page</title>
+	<link  href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta charset="utf-8">
+	<style >
+		body {
+			background-color: rgb(120,120,120);
+			font-family: 'Francois' ,sans-serif;
+			font-style: italic;
+			color: rgb(51,51,51);
+		}
+		#page-container {
+			position: relative;
+		}
+		#header {
+			background-color: rgb(243,112,32);
+			position: fixed;
+			top: 0;
+			min-height:78px;
+			width: 100%;
+			padding: 0px 20px;
+			margin-left: -8px;
+			display: flex;
+			align-items:center;
+			z-index:2;
+			@media (max-width: 568px){
+				flex-wrap: wrap;
+			}
+			
+		}
+		#Header-img {
+			padding: 11px;
+			width: 100px;
+			height: 100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			margin-left: 27px;
+			@media (max-width: 568px){
+				position: relative;
+			}
+
+		}
+		h1 {
+			padding: 30px;
+			padding-left: 0px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+		#nav-bar{
+			padding: 3px;
+			margin-left: 200px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			@media (max-width: 568px){
+				margin-top: 1px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+		.nav-link {
+			margin: 23px;
+			padding: 11px;
+			font-size: 21px;
+			color: rgb(51,51,51);
+			@media (max-width: 568px){
+				flex-direction: column;
+			}
+		}
+		button {
+			margin: 11px;
+			padding: 7px;
+			background-color: rgb(243,112,32);
+			border: 3px solid rgb(51,51,51);
+			border-radius: 10px;
+			@media (max-width: 568px){
+				flex-direction: column;
+			}
+
+		}
+		.form-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			margin-top: 170px;
+			margin-bottom: 20px;
+		}
+		h2 {
+			margin-bottom: -7px;
+		}
+		p {
+			font-size: 19px;
+		}
+		#email {
+			display: flex;
+			text-align: center;
+			font-size: 20px;
+			margin: 13px;
+			width: 323px;
+			height: 27px;
+			border: 2px solid rgb(243,112,32);
+			border-radius: 10px;
+		}
+		#submit {
+			margin: 13px;
+			padding: 5px;
+			font-size: 19px;
+			background-color: rgb(243,112,32);
+			border: 2px solid;
+			border-radius: 9px;
+			&:hover {
+				transition:  background-color 2s;
+			}
+		}
+		@media (max-width: 568px){
+				margin-top: 320px;
+			}
+		.contents {
+			width: 100%;
+			margin: 0,auto;
+		}
+		#features {
+			padding: 23px;
+		}
+		.list {
+			display: flex;
+			margin: auto;
+			width: 70%;
+		}
+		.icons {
+			display: flex;
+			align-items: left;
+			justify-content: left;
+			margin: 41px 17px 0px 0px;
+			padding: 13px;
+        	color: rgb(243,112,32);
+		}
+		.material-icons {
+			padding: 10px;
+			transform: scale(2,2);
+		}
+		.discription {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin-top: auto;
+			@media (max-width: 568px){
+				width: 100%;
+				text-align: center;
+				margin: 10px;
+				padding: 20px;
+				height: 250px;
+			}
+		}
+		#how-it-works {
+			display: flex;
+			margin-top: 71px;
+			justify-content: center;
+		}
+		#video {
+			max-width: 560px;
+			width: 100%; 
+		}
+		#pricing {
+			display: flex;
+			flex-direction: row;
+			margin-top: 79px;
+			justify-content: center;
+			text-align: center;
+			padding: 101px;
+		}
+		img {
+			width: 250px;
+			height: 170px;
+		}
+		#copper {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			width: calc(100%/3);
+			margin: 11px;
+			border: 7px solid rgb(243,112,32);
+			border-radius: 9px;
+		}
+		#platinum {
+			display: flex;
+			flex-direction: column;
+            align-items: center;
+			text-align: center;
+			width: calc(100%/3);
+			margin: 11px;
+			border: 7px solid rgb(243,112,32);
+			border-radius: 9px;
+		}
+		#iridium {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			text-align: center;
+			width: calc(100%/3);
+			margin: 11px;
+			border: 7px solid rgb(243,112,32);
+			border-radius: 9px;
+		}
+		.option {
+			font-size: 23px;
+			text-align: center;
+			padding: 7px;
+		}
+		.btn {
+			padding: 13px;
+			width: 97px;
+			&:hover {
+				background-color: red;
+				transition: background-color 2s;
+		}
+		li {
+			text-align: left;
+		}
+		@media (max-width: 568px) {
+			flex-direction: column;
+			#copper , #platinum , #iridium {
+				max-width: 568px;
+				margin: auto;
+				margin-bottom: 10px;
+			}
+		}
+		footer {
+			margin: auto;
+			
+		}
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<div id="page-container"><!-- Overall Dive Page Container -->
+		<header id="header"><!--Header-->
+			<img  id="Header-img" src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png" alt="Ninja world"/>
+			<h1>Ninja World</h1> <!-- page Title --> 
+			<nav id="nav-bar"><!-- Navigation Bar -->
+				<button><a class="nav-link" href="#feature">Features</a></button>
+				<button><a class="nav-link" href="#how-it-works">How It Works</a></button>
+				<button><a class="nav-link" href="#pricing">Pricing</a></button>
+			</nav>
+		</header>
+	</div>
+	<br>
+	<div class="form-container"><!--Form container -->
+			<h2>Spark the first , every time</h2><!-- form title--> 
+			<p>Subscribe to our mailing list for news alerts and offers!</p>
+			<form id="form" method="post" action="https://www.freeCodeCamp.com/email-submit">
+				<input  id="email" type="email" name="email" placeholder="Please enter your email: " required>
+				<input  id="submit" type="submit"  value="Start your engines">
+			</form>
+		</div>
+		<br>
+		<div class="contents"><!--Content Container -->
+			<section id="feature"><!-- Features Section -->
+				<div class="list"><!-- Quality Feature -->
+					<div class="icons">
+						<i class="material-icons">assignment_turned_in</i>
+					</div>
+					<div class="discription">
+						<h2>Quality</h2>
+						<p>Our number one priority is to provide our customers with the number one spark plug in fitment and performance quality! Our spark plugs are guaranteed to fit your application and start every time you turn the key!</p>
+					</div>
+				</div>
+				<div class="list"><!-- Technology Feature -->
+					<div class="icons">
+						<i class="material-icons">build </i>
+					</div>
+					<div class="discription">
+						<h2>Technology</h2>
+						<p>We build our spark plugs from premium materilas and utilize the latest in fuel burning technology to help maximize your vehicle's fuel efficiency!</p>
+						
+					</div>
+				</div>
+				<div class="list"><!-- customer Service Feature -->
+					<div class="icons">
+						<i class="material-icons">settings_phone</i>
+					</div>
+					<div class="discription">
+						<h2>Customer Service</h2>
+						<p>Happy customers keep the engin going and we offer 24/7 customer service to ensure our patrons are 100% satisfied with the fitment and performance of their spark plugs!</p>
+					</div>
+				</div>
+			</section>
+			<section id="how-it-works"><!-- How It Works Section -->
+				<iframe  id="video" width="560" height="315" src="https://www.youtube.com/embed/dea07uYGkps" frameborder="0" allowfullscreen></iframe>
+			</section>
+			<br>
+			<section id="pricing"><!-- Pricing Section -->
+				<div id="copper">
+					<div class="option">
+						Copper Plug
+					</div>
+					<img src="https://www.autolite.com/images/default-source/product-images/automotive/copper/copper-group.png?sfvrsn=ab8fabe1_12" align="Ogrin Copper Spark Plug"/>
+					<h3>$2 Per Plug</h3>
+					<ul>
+						<li>3 year / 100,000 mile warrenty</li>
+						<li>Oxide coating to prevent corrostion</li>
+						<li>Guaranteed start every time!</li>
+					</ul>
+					<button class="btn">Select</button>
+				</div>
+				<div id = "platinum">
+					<div class="option">
+						Platinum Plug
+					</div>
+					<img src="https://www.autolite.com/images/default-source/product-images/automotive/copper/copper-group.png?sfvrsn=ab8fabe1_12" alt="Ogrin Iridium Spark Plug"/>
+					<h3>$5 per Plug</h3>
+					<ul>
+						<li>5 year / 100,000 mile warrenty</li>
+						<li>Iridium welded rod ensures the best spark</li>
+						<li>If this one fails, it's on us!</li>
+					</ul>
+					<button class="btn">Select</button>
+				</div>
+				<div id="iridium">
+					<div class="option">
+						Iridium Plug
+					</div>
+					<img src="https://www.autolite.com/images/default-source/product-images/automotive/copper/copper-group.png?sfvrsn=ab8fabe1_12" alt="Ogrin Iridium Spark"/>
+					<h3>$7 Per Plug</h3>
+					<ul>
+						<li>7 year / 100,000 mile warrenty</li>
+						<li>Iridium welde rod ensures the best spark</li>
+						<li>If this one fails, it's on us!</li>
+					</ul>
+					<button class="btn">Select</button>
+				</div>
+			</section>
+		</div>
+</body>
+<footer><!-- Footer Section -->
+	<span>&copy;2019 Coded By: Jayson Vo</span>
+</footer>
+</html>

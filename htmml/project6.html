@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UI Kit Demo</title>
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+	<style type="text/css">
+		*,
+		*:before,
+		*:after {
+			-webkit-box-sizing:border-box;
+			-moz-box-sizing:border-box;
+			box-sizing: border-box;
+		}
+		body {
+			line-height: 1.7;
+			background: #eee;
+		}
+		/* UI Color Scheme */
+
+		$ui-base-color: #e0e0e0;
+		$ui-primary-color: #3BAFDA ; 
+		$ui-secondary-color: #777DA7; 
+		$ui-third-color: #62929E;
+		$ui-input-color: #f6f6f6; 
+        
+        /*UI Font Styles */
+        $base-font-size: 16px; 
+
+        $ui-font-family:  'Open Sans', sans-serif;  
+
+        $ui-text-transform: uppercase; 
+
+        $ui-font-size: 14px; 
+
+        $ui-font-size-h1: 36px; 
+
+        $ui-font-size-h2: 21px; 
+
+
+        $ui-text-color: #444; 
+
+        $ui-text-light-color: #fff; 
+
+
+         /* UI Main Element Styles */
+
+        $ui-border-radius: 4px; 
+
+        $ui-border-width: 1px; 
+
+        $ui-element-height: 47px;
+
+        $ui-padding-vertical: 19px;
+
+        $ui-padding-horizontal: 40px;
+
+
+        $ui-hover-easing: ease;
+
+        $ui-hover-transition-duration: 0.1s;
+
+       /* Wrap and Components */
+
+       $ui-inner-margin: 22px; 
+
+       $base-font-size: 16px;
+       @function em($target, $context: $base-font-size) {
+       	@if $target == 0 { @return 0 }
+       	@return $target / $context + 0em;
+       }
+       @function rem($target, $context: $base-font-size) {
+       	@if $target == 0 { @return 0 }
+       	@return $target / $context + 0rem;
+       }
+
+       .row {
+       	width: 100%;
+       	margin-left: auto;
+       	margin-right: auto;
+       }
+
+ 
+
+
+	</style>
+
+</head>
+<body>
+	<div class="container-view">
+		<div class="row">
+			<div class="flex box-outer">
+				<div class="ui panel row">
+					<div class="ui profile">
+						<img src="https://images.genius.com/3d55d0c2b20321b1e0f4cbefba7917eb.1000x1000x1.jpg" alt="@JoJi">
+						<h3>JoJi</h3>
+						<p>New York US</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+</body>
+</html>

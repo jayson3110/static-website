@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet"  href="style.css">
+	<meta name="viewport" content="width=device-width, initia-scale=1">
+	<style >
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: "montserrat" , sans-serif ;
+		}
+		.landing-page {
+			width: 100%;
+			height: 100vh;
+			background: #000;
+			position: relative;
+			overflow: hidden;
+		}
+		.landing-page::after {
+			content: "";
+			position: absolute;
+			left:0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: url("https://www.spacesworks.com/wp-content/uploads/pim_images/14408007b9bcedf51c27aab56c79c04dc47fe43e80b2a2f_Spaces_Washington_NoMa_Coworking_Designer_Office.jpg") no-repeat ;
+			background-size: cover;
+			opacity: .3;
+			animation: anim 25s linear infinite;
+		}
+		@keyframes anim {
+			50% {
+				transform: scale(2);
+			}
+			100% {
+				transform: scale(1);
+			}
+		}
+		.page-content {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			z-index: 1;
+			width: 100%;
+			max-width: 800px;
+			text-align: center;
+			padding: 0 40px;
+			box-sizing: border-box; 
+		}
+		.page-content h1{
+			color: #ff7979;
+			text-transform: uppercase;
+			font-size: 50px;
+			font-weight: 900;
+			margin-bottom: 20; 
+
+		}
+		.page-content p {
+			color: #fff;
+			margin-bottom: 20px;
+		}
+		.page-content a{
+			display: inline-block;
+			text-decoration: none;
+			color: #ff7979;
+			border: 2px solid #ff7979;
+			text-transform: uppercase;
+			padding: 10px 20px;
+			transition: 0.4s linear;
+		}
+		.page-content a:hover {
+			color:#fff;
+			background: #ff7979;
+		}
+		.text {
+			padding: 10px;
+			text-align: justify;
+		}
+		.text div {
+			margin-bottom: 6px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="landing-page">
+		<div class="page-content">
+			<h1>Full landing page</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu dui non lacus posuere eleifend et sit amet turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+			</p>
+			<a href="#">Let Started</a>
+			
+		</div>
+		
+	</div>
+	<div class="text">
+		<div>Nam rutrum nibh quis justo imperdiet posuere. Donec suscipit nunc orci, vel facilisis odio convallis a. Vivamus efficitur id nunc vitae sagittis</div>
+		<div>Aenean feugiat convallis nisl non accumsan. Mauris id nunc quam. Vivamus posuere risus justo, id consectetur purus maximus eget</div>
+		<div>Ut sodales vestibulum nibh ut sollicitudin. Fusce tincidunt nunc magna, sit amet sodales ante volutpat id</div>
+		<div>Phasellus rutrum lorem at pellentesque ornare. Vivamus condimentum, tortor ut sagittis eleifend, lacus purus sollicitudin quam, eu lacinia sapien risus ac urna. Vestibulum id enim volutpat sem vestibulum ornare a ac nunc</div>
+		<div>Phasellus imperdiet dolor sit amet eros tincidunt, a dignissim tortor pellentesque</div>	 
+	</div>
+
+</body>
+</html>

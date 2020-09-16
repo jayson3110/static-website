@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Onboarding</title>
+	<style type="text/css">
+
+		@import url('https://fonts.googleapis.com/css?family=Kanit:400,800|Lato:300,400&display=swap');
+		body {
+			background: #F2D3C6;
+		}
+		.container {
+			min-width: 750px;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.items {
+			position: relative;
+			background:#F9F9F9;
+			width: 280px;
+			height: 350px;
+			border-radius: 5px;
+			margin: 10px;
+			box-shadow: 2px 5px 8px rgba(#252421 , .2) ;
+			overflow: hidden;
+			transition: ease 0.7s; 
+		}
+		.items:hover {
+				transform:scale(1.03);
+				cursor: pointer;
+				box-shadow: 5px 8px  10px rgba(#252421, .2);
+		}
+		
+		h1 {
+			color: #799875;
+			text-transform: uppercase;
+			font-size: 5em;
+			font-weight: 800;
+			line-height: .75em;
+			margin: 50px 0 10px 0;
+		}
+		p {
+			font-size: 0.75em;
+			line-height: 1.4em;
+			font-family: 'Lato', sans-serif;
+			color: #799875;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			margin: 93px 25px 0 25px;
+		}
+		.accent-line {
+			height: 7px;
+			width: 50%;
+			margin-bottom: 15px;
+		}
+		.pink3 {
+			background: #C4ABA1;
+		}
+		.seattle {
+			opacity: .7;
+			height: 100%;
+			margin-left: -120%;
+		}
+		.title {
+			position: absolute;
+			top:0;
+			color:white;
+			-webkit-text-stroke: 1px  #799875;
+		}
+		.green {
+			background: #799875;
+			position: absolute;
+			top: 51%;
+		}
+		.btn {
+			position: absolute;
+			bottom: 30px;
+			left: 25px;
+			padding: 14px;
+			border-radius: 5px;
+			outline: 0;
+			font-family: 'Lato', sans-serif;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			background: white;
+			border: 0;
+			color: #799875;
+			transition: ease 0.6s;
+		}
+		.btn:hover {
+			background:#799875;
+			color: white;
+			cursor: pointer;
+
+		}
+		footer {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			padding: 5px;
+			font-size: 0.8em;
+			text-transform: uppercase;
+			font-family: 'Lato', sans-serif;
+		}
+		p {
+			letter-spacing: 2px;
+		}
+		a {
+			color:  #252421;
+			text-decoration: none;
+			transition: ease 0.7s;
+			padding: 3px;
+		}
+		a:hover {
+			background-color: #799875;
+			color: white;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="items">
+			<h1>f1<br>nd</h1>
+			<div class="accent-line pink3"></div>
+			<p>find beautiful spots & delicious food in seattle.</p>
+		</div>
+		<div class="items pink3">
+			<img  class="seattle" src="https://2v8nyhuka1p2cb1la1ormlxg-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/seattle.jpg">
+			<h1 class="title">explo<br>re</h1>
+			<div class="accent-line green">
+			</div>
+			<button class="btn">Start here</button>
+		</div>
+		<div class="items">
+			<h1>shar<br>e</h1>
+			<div class="accent-line pink3"></div>
+			<p>Share with you friends<br> and your family.</p>
+		</div>
+	</div>
+	<footer>
+		<p>made by <a href="https://codepen.io/juliepark">Jayson</a>♡</p>
+	</footer>
+
+</body>
+</html>

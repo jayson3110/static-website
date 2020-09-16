@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google.com</title>
+	<link rel="shortcut icon" type="image/jpg" href="imgeme/googleg.png">
+</head>
+<style type="text/css">
+	body {
+		overflow: hidden;
+	}
+	#core-content {
+		height: 70vh;
+		width: 100%;
+		max-width: 100vw;
+		max-height: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+	}
+	#logo {
+		margin-bottom: 20px;
+	}
+	#search {
+		border: 1px solid #cccccc;
+		border-radius: 20px;
+		width: 100%;
+		width: 584px;
+		height: 40px;
+		margin-bottom: 20px;
+		padding: 20px;
+	}
+	#search:hover {
+		box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+		border-color:rgba(223,225,229,0);
+	}
+	#search:focus {
+		outline: none;
+		box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+		border-color: rgba(223,225,229,0);
+	}
+	input[type="submit"] {
+		background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1)
+		background-color:#f2f2f2;
+		border: 1px solid #f2f2f2;
+		border-radius: 4px;
+		color: #5F6368;
+		font-family: arial, sans-serif;
+		font-size: 14px;
+		margin: 11px 4px;
+		padding: 0 16px;
+		line-height: 27px;
+		height: 36px;
+		min-width: 54px;
+		text-align: center;
+		cursor: pointer;
+	}
+	input[type="submit"]:hover {
+		box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+		background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+		background-color: #f8f8f8;
+		border: 1px solid #c6c6c6;
+		color:#222;
+	}
+	header {
+		width: 100%;
+	}
+	#nav-bar {
+		float: right;
+	}
+	#nav-bar ul {
+		list-style: none;
+		padding-left: 0;
+		display: flex;
+		align-items: center;
+	}
+	#nav-bar ul li {
+		margin-right: 20px;
+	}
+	#nav-bar ul li a {
+		text-decoration: none;
+		font-family: arial, sans-serif;
+		color: rgba(0,0,0,0.87);
+		font-size:13px;
+	}
+	#nav-bar ul li a img {
+		width: 100%;
+		max-width: 25px;
+		height: auto;
+	}
+	#nav-bar ul li a#menu-icon:hover{
+		border:none;
+	}
+	#sign-in{
+		border: 1px solid #4285f4;
+		border-radius: 2px;
+		font-weight: bold;
+		outline: none;
+		background: #4285f4;
+		background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+		background: linear-gradient(top,#4387fd,#4683ea);
+		padding: 5px 10px;
+		color: #fff !important;
+	}
+	#footer {
+		position: fixed;
+		bottom: 0;
+		width: 97vw;
+		display: flex;
+		justify-content: space-between;
+		background-color: #f2f2f2;
+		font-family: arial, sans-serif;
+		font-size: 14px;
+		padding-left: 20px;
+		padding-right: 40px;
+
+	}
+	#foot1 ul, #foot2 ul {
+		list-style: none;
+		display: flex;
+		padding-left: 0;
+	}
+	#foot1 ul li , #foot2 ul li {
+		margin-right: 20px;
+	}
+	#foot1 ul li a, #foot2 ul a {
+		text-decoration: none;
+		color: #707478;
+	}
+	#foot1 ul li a:hover, #foot2 ul li a:hover {
+		border-bottom: 1px solid #707478;
+	}
+
+
+
+
+</style>
+<body>
+	<main id="main">
+		<header id="header">
+			<nav id="nav-bar">
+				<ul>
+					<li><a href="https://mail.google.com/mail/u/0/?tab=wm&ogbl#inbox">Gmail</a></li>
+					<li><a href="https://www.google.com.vn/imghp?hl=vi&tab=wi&authuser=0&ogbl">Images</a></li>
+					<li><a href="#" id="menu-icon"><img src="imgeme/menu-icon.png"></a></li>
+					<li><a href="#" id="sign-in">Sign in</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section id="core-content">
+			<img src="imgeme/google_logo.png" alt="The Google logo" id="logo">
+			<form action="#" id="form">
+				<input type="text" name="search" id="search">
+				<div id="submit-container">
+					<input type="submit" name="search" id="submit1" value="Google Search">
+					<input type="submit" name="search" id="submit2" value="I'm Feeling Lucky">
+				</div>
+			</form>
+			<footer id="footer">
+				<nav id="foot1">
+					<ul>
+						<li><a href="https://ads.google.com/intl/vi_vn/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+						<li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">
+						Business</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="https://www.google.com/search/howsearchworks/?fg=1">How Search works</a></li>
+					</ul>
+				</nav>
+				<nav id="foot2">
+					<ul>
+						<li><a href="https://ads.google.com/intl/vi_vn/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Priviacy</a></li>
+						<li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Terms</a></li>
+						<li><a href="#">Settings</a></li>
+					</ul>
+				</nav>
+			</footer>
+		</section>
+	</main>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Native HTML expand</title>
+	<style type="text/css">
+		.container {
+			max-width: 768px;
+			margin: 100px auto;
+			box-shadow: 0 3px 10px #0003;
+			border-radius: 2px;
+		}
+		details > summary {
+			padding: 8px 16px;
+			font-weight: bold;
+		}
+		details > div {
+			padding: 16px;
+		}
+		details > summary:hover {
+			background: #f4f4f4;
+		}
+		details:not(:first-of-type) > summary {
+			border-top: 1px solid #ddd;
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style-position: inside;
+		}
+		body {
+			font-family: sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<details>
+			<summary>Life Story</summary>
+			<div>Nothing special,I think you're pretty cool.</div>
+		</details>
+		<details>
+			<summary>Contac Info</summary>
+			<div>
+				<ul>
+					<li>Twitter: <a href="facebook.com" target="_blank">@Jayson</a></li>
+					<li>GitHub: <a href="https://github.com/join" target="_blank">Jayson</a></li>
+				</ul>
+			</div>
+		</details>
+		<details>
+			<summary>Future Career Options</summary>
+			<div>
+				<li>Chief Trolling Officer</li>
+				<li>Hat Model</li>
+			</div>
+		</details>
+	</div>
+
+</body>
+</html>

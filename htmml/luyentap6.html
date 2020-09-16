@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Card Flip Animations</title>
+	<style>
+		@import url("https://fonts.googleapis.com/css?family=Questrial");
+		html {
+			min-height: 100%;
+		}
+		body {
+			background: linear-gradient(#70e1f5,#ffd194);
+		}
+		.box {
+			width: 800px;
+			margin: 10% auto;
+			position: relative;
+		}
+		#card-container {
+			position: relative;
+			margin: 30px;
+			width: 200px;
+			height: 200px;
+			z-index: 1;
+			float: left;
+			perspective: 1000px;
+		}
+		img {
+			width: 200px;
+			height: 200px;
+		}
+		#card, #card2, #card3{
+			width: 100%;
+			height: 100%;
+			margin: 10%;
+			transform-style: preserve-3d;
+			transition: all .8s linear;
+			box-shadow:5px 5px 15px rgba(0,0,0, .3);
+		}
+		#card:hover {
+			transform: rotateY(-180deg);
+			box-shadow:-5px 5px 15px rgba(0,0,0,.3);
+		}
+		.face {
+			position: absolute;
+			width: 100%;
+			height:100%;
+			backface-visibility: hidden;
+
+		}
+		.back {
+			display: block;
+			transform: rotateY(180deg);
+			box-sizing: border-box;
+			padding: 10px;
+			text-align: center;
+			opacity: .7;
+			background: #F9F3E4;
+		}
+		.back {
+			transform: rotateX(-180deg);
+		}
+		h1 , p {
+			font-family: 'Questrial', sans-serif;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+		h1 {
+			font-size: 1.2em;
+			padding-top: 15px;
+			color: #DD899E;
+		}
+		p {
+			font-size: .5em;
+		}
+		.date {
+			color: #D0B2AF;
+		}
+		#card2:hover {
+			transform: rotateY(-180deg);
+			box-shadow: -5px 5px 15px rgba(0,0,0,.3);
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div id="card-container">
+			<div id="card">
+				<div class="front face">
+					<img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Bouquet_EP_cover_art.jpg/220px-Bouquet_EP_cover_art.jpg"/>
+				</div>
+			</div>
+			<div class="back face">
+				<h1>Bouquet</h1>
+				<p class="artist">The Chainsmokers</p>
+				<p class="date">2015</p>
+			</div>
+		</div>
+		<div id="card-container">
+			<div id="card2">
+				<div class="front face">
+					<img src="https://i.pinimg.com/originals/3f/e3/f9/3fe3f9bd5e2c4b61a8f36c8b9e3e66fa.png"/>
+				</div>
+				<div class="back face">
+					<h1>Roses</h1>
+					<p class="artist">The Chainsmokers</p>
+					<p class="date">2017</p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
